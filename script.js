@@ -13,7 +13,7 @@ async function getProjects(){
 
 function makeCard(item){
   const a = document.createElement('a');
-  a.className = 'card';
+  a.className = `card ${item.category}`;
   a.href = '#';
   a.dataset.id = item.id;
   a.innerHTML = `
