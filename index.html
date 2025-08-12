@@ -3,77 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Venugopal Moka | DevOps Engineer</title>
+  <title>Venugopal Moka | DevOps & AWS Engineer</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <h1>Venugopal Moka</h1>
-    <p>DevOps Engineer | AWS | Azure | Kubernetes | Terraform</p>
-    <nav>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>DevOps Engineer with 4 years of hands-on experience in cloud automation, CI/CD pipelines, containerization, and infrastructure as code. Passionate about building secure, scalable, and automated systems.</p>
-  </section>
+<header>
+  <h1>Venugopal Moka</h1>
+  <p>DevOps Engineer | AWS | Kubernetes | Terraform | CI/CD Automation</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#usecases">Use Cases</a>
+    <a href="#blogs">Blogs</a>
+    <a href="#github">GitHub</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><b>Cloud:</b> AWS, Azure</li>
-      <li><b>IaC:</b> Terraform, CloudFormation</li>
-      <li><b>Containers:</b> Docker, Kubernetes</li>
-      <li><b>CI/CD:</b> Jenkins, GitHub Actions, Azure DevOps</li>
-      <li><b>Monitoring:</b> Prometheus, Grafana, ELK</li>
-      <li><b>Web Servers:</b> Nginx, Tomcat</li>
-      <li><b>Scripting:</b> Shell</li>
-      <li><b>Tools:</b> Maven, Ansible, JIRA, PagerDuty</li>
-    </ul>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>DevOps Engineer with 4 years of experience in cloud automation, CI/CD pipelines, container orchestration, and infrastructure as code. Passionate about AWS, Kubernetes, and solving real-world deployment challenges.</p>
+</section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div>
-      <h3>DevOps Engineer - Zelarsoft Pvt Ltd (Apr 2021 – Jan 2025)</h3>
-      <ul>
-        <li>Designed and deployed secure AWS infrastructure using Terraform.</li>
-        <li>Automated ECS & EKS deployments with ALB and Auto Scaling.</li>
-        <li>Created OPA/Rego policies for multi-cloud security compliance.</li>
-        <li>Provided L1/L2 technical support for Styra DAS customers.</li>
-      </ul>
-    </div>
-  </section>
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li><b>Cloud:</b> AWS, Azure</li>
+    <li><b>IaC:</b> Terraform, CloudFormation</li>
+    <li><b>Containers:</b> Docker, Kubernetes</li>
+    <li><b>CI/CD:</b> Jenkins, GitHub Actions, Azure DevOps</li>
+    <li><b>Monitoring:</b> Prometheus, Grafana, ELK</li>
+    <li><b>Scripting:</b> Shell</li>
+  </ul>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <a href="projects/snyk.html" class="project-card">
       <h3>SNYK – Cloud Security Policy Automation</h3>
-      <p>Automated detection of misconfigurations using Terraform & OPA (Rego) across AWS, GCP, and Kubernetes.</p>
-    </div>
-    <div class="project">
-      <h3>AWS Infrastructure Automation & Deployment</h3>
+      <p>Automated detection of cloud misconfigurations using Terraform & OPA.</p>
+      <span class="tech-stack">Terraform · OPA · AWS · GCP · Kubernetes</span>
+    </a>
+    <a href="projects/aws-infra.html" class="project-card">
+      <h3>AWS Infrastructure Automation</h3>
       <p>Automated AWS provisioning and ECS deployments using Terraform and GitHub Actions.</p>
-    </div>
-    <div class="project">
-      <h3>Styra DAS Technical Support</h3>
-      <p>Provided L1/L2 support, documented troubleshooting guides, and escalated critical issues.</p>
-    </div>
-  </section>
+      <span class="tech-stack">AWS · Terraform · ECS</span>
+    </a>
+    <a href="projects/styra.html" class="project-card">
+      <h3>Styra DAS Support</h3>
+      <p>Provided L1/L2 support, documented troubleshooting guides, and escalated issues.</p>
+      <span class="tech-stack">FreshDesk · JIRA</span>
+    </a>
+    <a href="projects/monitoring.html" class="project-card">
+      <h3>Custom Monitoring Dashboard</h3>
+      <p>Built a Prometheus & Grafana dashboard to monitor AWS EC2 instances.</p>
+      <span class="tech-stack">Prometheus · Grafana · Docker</span>
+    </a>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:venugopalm6766@gmail.com">venugopalm6766@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/venugopalmoka" target="_blank">linkedin.com/in/venugopalmoka</a></p>
-  </section>
+<section id="usecases">
+  <h2>DevOps & AWS Use Cases</h2>
+  <div class="usecase-grid">
+    <div class="usecase-card">
+      <h3>Zero-Downtime ECS Deployment</h3>
+      <p>Implemented blue-green deployment in AWS ECS using ALB target group swapping.</p>
+    </div>
+    <div class="usecase-card">
+      <h3>Multi-Region S3 Backup</h3>
+      <p>Automated daily backups with S3 cross-region replication and lifecycle policies.</p>
+    </div>
+    <div class="usecase-card">
+      <h3>Kubernetes Rolling Updates</h3>
+      <p>Automated rolling updates with zero downtime using Kubernetes deployments.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Venugopal Moka</p>
-  </footer>
-</body>
-</html>
+<section id="blogs">
+  <h2>Medium Blogs</h2>
+  <div id="medium-posts">
+    <p>🚀 Coming Soon — I’ll be sharing AWS & DevOps insights here.</p>
+  </div>
+</section>
+
+<section id="github">
+  <h2>GitHub Repositories</h2>
+  <div class="repo-grid">
+    <div class="repo-card">
+      <h3>AWS-Terrafor

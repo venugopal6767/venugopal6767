@@ -2,7 +2,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: #f9f9f9;
-  color: #333;
 }
 
 header {
@@ -20,21 +19,41 @@ header nav a {
 
 section {
   padding: 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
 }
 
-.project {
+.project-grid, .usecase-grid, .repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card, .usecase-card, .repo-card, .blog-card {
   background: white;
   padding: 15px;
-  margin: 10px 0;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card:hover, .usecase-card:hover, .repo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.tech-stack {
+  font-size: 0.85em;
+  color: #555;
+  background: #eaf1ff;
+  padding: 4px 8px;
+  border-radius: 4px;
 }
 
 footer {
-  text-align: center;
-  padding: 10px;
   background: #1a73e8;
   color: white;
+  text-align: center;
+  padding: 10px;
 }
