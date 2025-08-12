@@ -1,97 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Venugopal Moka | DevOps & AWS Engineer</title>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Venugopal Moka — DevOps & AWS Engineer</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<header>
-  <h1>Venugopal Moka</h1>
-  <p>DevOps Engineer | AWS | Kubernetes | Terraform | CI/CD Automation</p>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#usecases">Use Cases</a>
-    <a href="#blogs">Blogs</a>
-    <a href="#github">GitHub</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header class="site-header">
+  <div class="container">
+    <h1>Venugopal Moka</h1>
+    <p class="subtitle">DevOps Engineer • AWS · Kubernetes · Terraform</p>
+  </div>
 </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>DevOps Engineer with 4 years of experience in cloud automation, CI/CD pipelines, container orchestration, and infrastructure as code. Passionate about AWS, Kubernetes, and solving real-world deployment challenges.</p>
-</section>
+<main class="container">
+  <!-- Controls -->
+  <section class="controls" aria-label="Filters">
+    <label for="category">Category</label>
+    <select id="category" aria-label="Filter projects by category">
+      <option value="all">All</option>
+      <option value="project">Project</option>
+      <option value="usecase">Use-case</option>
+      <option value="certification">Certification</option>
+      <option value="badge">Badge</option>
+    </select>
+  </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li><b>Cloud:</b> AWS, Azure</li>
-    <li><b>IaC:</b> Terraform, CloudFormation</li>
-    <li><b>Containers:</b> Docker, Kubernetes</li>
-    <li><b>CI/CD:</b> Jenkins, GitHub Actions, Azure DevOps</li>
-    <li><b>Monitoring:</b> Prometheus, Grafana, ELK</li>
-    <li><b>Scripting:</b> Shell</li>
-  </ul>
-</section>
+  <!-- Projects Grid -->
+  <section id="projects" class="project-grid" aria-live="polite" aria-label="Projects">
+    <!-- Cards rendered by script.js -->
+  </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project-grid">
-    <a href="projects/snyk.html" class="project-card">
-      <h3>SNYK – Cloud Security Policy Automation</h3>
-      <p>Automated detection of cloud misconfigurations using Terraform & OPA.</p>
-      <span class="tech-stack">Terraform · OPA · AWS · GCP · Kubernetes</span>
-    </a>
-    <a href="projects/aws-infra.html" class="project-card">
-      <h3>AWS Infrastructure Automation</h3>
-      <p>Automated AWS provisioning and ECS deployments using Terraform and GitHub Actions.</p>
-      <span class="tech-stack">AWS · Terraform · ECS</span>
-    </a>
-    <a href="projects/styra.html" class="project-card">
-      <h3>Styra DAS Support</h3>
-      <p>Provided L1/L2 support, documented troubleshooting guides, and escalated issues.</p>
-      <span class="tech-stack">FreshDesk · JIRA</span>
-    </a>
-    <a href="projects/monitoring.html" class="project-card">
-      <h3>Custom Monitoring Dashboard</h3>
-      <p>Built a Prometheus & Grafana dashboard to monitor AWS EC2 instances.</p>
-      <span class="tech-stack">Prometheus · Grafana · Docker</span>
-    </a>
-  </div>
-</section>
-
-<section id="usecases">
-  <h2>DevOps & AWS Use Cases</h2>
-  <div class="usecase-grid">
-    <div class="usecase-card">
-      <h3>Zero-Downtime ECS Deployment</h3>
-      <p>Implemented blue-green deployment in AWS ECS using ALB target group swapping.</p>
-    </div>
-    <div class="usecase-card">
-      <h3>Multi-Region S3 Backup</h3>
-      <p>Automated daily backups with S3 cross-region replication and lifecycle policies.</p>
-    </div>
-    <div class="usecase-card">
-      <h3>Kubernetes Rolling Updates</h3>
-      <p>Automated rolling updates with zero downtime using Kubernetes deployments.</p>
-    </div>
-  </div>
-</section>
-
-<section id="blogs">
-  <h2>Medium Blogs</h2>
-  <div id="medium-posts">
+  <!-- Blogs placeholder -->
+  <section id="blogs" class="section-block">
+    <h2>Medium Blogs</h2>
     <p>🚀 Coming Soon — I’ll be sharing AWS & DevOps insights here.</p>
-  </div>
-</section>
+  </section>
 
-<section id="github">
-  <h2>GitHub Repositories</h2>
-  <div class="repo-grid">
-    <div class="repo-card">
-      <h3>AWS-Terrafor
+  <!-- GitHub Repos (manual links; can be automated later) -->
+  <section id="github" class="section-block">
+    <h2>Highlighted Repositories</h2>
+    <div class="repo-grid">
+      <div class="repo-card">
+        <h3>AWS-Terraform-Setup</h3>
+        <a href="https://github.com/yourusername/aws-terraform-setup" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+      <div class="repo-card">
+        <h3>Kubernetes-Monitoring</h3>
+        <a href="https://github.com/yourusername/kubernetes-monitoring" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section-block">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:venugopalm6766@gmail.com">venugopalm6766@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/venugopalmoka" target="_blank" rel="noopener">linkedin.com/in/venugopalmoka</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 Venugopal Moka</p>
+  </div>
+</footer>
+
+<!-- Modal (hidden by default) -->
+<div id="project-modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title">
+  <div class="modal-content" role="document">
+    <button class="modal-close" id="modal-close" aria-label="Close modal">✕</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

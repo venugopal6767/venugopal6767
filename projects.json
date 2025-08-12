@@ -1,0 +1,46 @@
+[
+  {
+    "id":"snyk",
+    "title":"SNYK — Cloud Security Policy Automation",
+    "summary":"Detect misconfigurations across AWS, GCP & K8s using Terraform + OPA (Rego).",
+    "category":"project",
+    "tech":"Terraform · OPA · AWS · Kubernetes",
+    "image":"images/snyk-architecture.png",
+    "github":"https://github.com/yourusername/snyk-project",
+    "demo":"",
+    "details":"Developed a multi-cloud policy engine, integrated with CI/CD, alerted violations to JIRA and automated remediations."
+  },
+  {
+    "id":"aws-infra",
+    "title":"AWS Infrastructure Automation",
+    "summary":"Automated VPC, ALB, ECS, RDS using Terraform and GitHub Actions.",
+    "category":"project",
+    "tech":"AWS · Terraform · ECS · ECR",
+    "image":"images/aws-infra.png",
+    "github":"https://github.com/yourusername/aws-terraform-setup",
+    "demo":"",
+    "details":"Modular Terraform for multi-AZ infra, CI/CD pipeline building images, pushing to ECR, and deploying to ECS."
+  },
+  {
+    "id":"styra",
+    "title":"Styra DAS — L1 / L2 Support",
+    "summary":"Support playbooks, ticket triage & escalation for customer issues.",
+    "category":"usecase",
+    "tech":"FreshDesk · JIRA · Kubernetes",
+    "image":"images/styra.png",
+    "github":"",
+    "demo":"",
+    "details":"Handled L1/L2 troubleshooting, pulled logs from K8s/AWS, escalated critical issues to engineering and authored KB articles."
+  },
+  {
+    "id":"monitoring",
+    "title":"Monitoring Dashboard",
+    "summary":"Prometheus + Grafana monitoring for EC2, ECS & K8s with PagerDuty alerts.",
+    "category":"project",
+    "tech":"Prometheus · Grafana · PagerDuty",
+    "image":"images/monitoring.png",
+    "github":"https://github.com/yourusername/kubernetes-monitoring",
+    "demo":"",
+    "details":"Built exporters, alert rules, dashboards and automated PagerDuty notifications for production alerts."
+  }
+]
